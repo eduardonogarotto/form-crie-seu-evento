@@ -31,8 +31,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto Finalizado
 
-Em desenvolvimento.
-
 <a href="https://form-crie-seu-evento.vercel.app/" target="_blank"><strong> - Clique aqui para acessar o meu projeto finalizado.</strong></a>
 
 ## 🔖 Layout
