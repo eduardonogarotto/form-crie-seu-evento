@@ -22,78 +22,119 @@
       </header>
 
       <main>
-        <form id="event-form" method="POST">
+        <form id="event-form" action="" method="POST">
           <fieldset>
-            <legend>Informações do Evento</legend>
+            <div class="fieldset-wrapper">
+              <legend>Informações do Evento</legend>
 
-            <label for="event-title"
-              >Título do evento <span>(mínimo 8 caracteres)</span></label
-            >
-            <input
-              type="text"
-              id="event-title"
-              minlength="8"
-              autofocus
-              required
-            />
+              <div class="input-wrapper">
+                <label for="event-title"
+                  >Título do evento <span>(mínimo 8 caracteres)</span></label
+                >
+                <input
+                  type="text"
+                  id="event-title"
+                  minlength="8"
+                  autofocus
+                  required
+                />
+              </div>
 
-            <label for="event-link"
-              >Link do evento <span>(comece com https://)</span></label
-            >
-            <input type="url" id="event-link" required />
+              <div class="input-wrapper">
+                <label for="event-link"
+                  >Link do evento <span>(comece com https://)</span></label
+                >
+                <input type="url" id="event-link" required />
+              </div>
 
-            <label for="event-whatsapp"
-              >Whatsapp para contato <span>(somente números)</span></label
-            >
-            <input type="tel" id="event-whatsapp" pattern="[0-9]{3}[0-9]{9}" placeholder="(DDD)9XXXX-XXXX Ex.: 012900000000" required />
+              <div class="input-wrapper">
+                <label for="event-whatsapp"
+                  >Whatsapp para contato <span>(somente números)</span></label
+                >
+                <input
+                  type="tel"
+                  id="event-whatsapp"
+                  pattern="[0-9]{3}[0-9]{9}"
+                  placeholder="Por gentileza, insira o DDD antes do número. - Ex.: 012900000000"
+                  required
+                />
+              </div>
 
-            <label for="event-info">Informações extras</label>
-            <textarea id="event-info"></textarea>
+              <div class="input-wrapper">
+                <label for="event-info">Informações extras</label>
+                <textarea id="event-info"></textarea>
+              </div>
 
-            <label for="event-category">Categoria</label>
-            <select id="event-category" required>
-              <option value="null" checked></option>
-              <option value="live">Live</option>
-              <option value="show">Show</option>
-              <option value="meeting">Reunião</option>
-              <option value="interview">Entrevista</option>
-              <option value="mentorship">Mentoria</option>
-              <option value="workshop">Workshop</option>
-              <option value="class">Aula / Curso</option>
-              <option value="talk">Congresso / Palestra</option>
-            </select>
+              <div class="input-wrapper">
+                <label for="event-category">Categoria</label>
+                <select id="event-category" required>
+                  <option value="null" checked>Tipo do evento</option>
+                  <option value="live">Live</option>
+                  <option value="show">Show</option>
+                  <option value="meeting">Reunião</option>
+                  <option value="interview">Entrevista</option>
+                  <option value="mentorship">Mentoria</option>
+                  <option value="workshop">Workshop</option>
+                  <option value="class">Aula / Curso</option>
+                  <option value="talk">Congresso / Palestra</option>
+                </select>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset>
-            <legend>Privacidade</legend>
+            <div class="fieldset-wrapper">
+              <legend>Privacidade</legend>
 
-            <label for="event-email"
-              >E-mail do administrador
-              <span>(digite um e-mail válido)</span></label
-            >
-            <input type="email" id="event-email" required />
+              <div class="input-wrapper">
+                <label for="event-email"
+                  >E-mail do administrador
+                  <span>(digite um e-mail válido)</span></label
+                >
+                <input type="email" id="event-email" required />
+              </div>
 
-            <label for="event-password"
-              >Senha de acesso para os participantes
-              <span>(mínimo 8 caracteres)</span></label
-            >
-            <input type="password" id="event-password" minlength="8" required />
+              <div class="input-wrapper">
+                <label for="event-password"
+                  >Senha de acesso para os participantes
+                  <span>(mínimo 8 caracteres)</span></label
+                >
+                <input
+                  type="password"
+                  id="event-password"
+                  minlength="8"
+                  required
+                />
+              </div>
 
-            <input type="checkbox" id="event-private" />
-            <label for="event-private">Evento privado</label>
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="event-private" />
+                <label for="event-private">Evento privado</label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset>
-            <legend>Dia e hora</legend>
+            <div class="fieldset-wrapper">
+              <legend>Dia e hora</legend>
 
-            <label for="event-date">Data</label>
-            <input type="date" id="event-date" required />
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="event-date">Data</label>
+                  <input type="date" id="event-date" required />
+                </div>
 
-            <label for="event-start-time">Das</label>
-            <input type="time" id="event-start-time" required />
+                <div class="input-wrapper">
+                  <label for="event-start-time">Das</label>
+                  <input type="time" id="event-start-time" required />
+                </div>
 
-            <label for="event-end-time">Até</label>
-            <input type="time" id="event-end-time" required />
+                <div class="input-wrapper">
+                  <label for="event-end-time">Até</label>
+                  <input type="time" id="event-end-time" required />
+                </div>
+              </div>
+            </div>
           </fieldset>
         </form>
       </main>
